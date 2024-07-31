@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .r {
+            color: white;
+            font-family: cursive;
+        }
+
+        .one {
+            display: flex;
+            flex-direction: row;
+            margin-top: 2%;
+            padding: 1% 8%;
+            border-radius: 30px;
+
+
+        }
+
+        .two {
+            padding: 1% 9%;
+            border-radius: 30px;
+            margin-top: 2%;
+        }
+
+        .three {
+            margin-top: 2%;
+            background-color: green;
+            color: white;
+            padding: 1% 8%;
+            display: flex;
+            flex-direction: row;
+            border-radius: 30px;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .register {
+            margin-top: 5%;
+        }
+</style>
+</head>
+
+<body>
+    <section class="main">
+        <form method="POST">
+            <center>
+                <h1 class="r">Registration form</h1>
+            </center>
+            <div class="box">
+                <center><input class="one" type="text" placeholder="Enter Your  FULLNAME" name="name">
+                    <input class="one" type="text" placeholder="Enter Your USERNAME" name="username">
+                    <input class="one" type="number" placeholder="Enter Your PHO.NO" name="mobilenumber">
+                    <input class="one" type="text" placeholder="Enter Your EMAIL" name="email">
+                    <input class="two" type="date" placeholder="Enter Your DOB" name="dob">
+                    <button class="three">SUBMIT</button>
+                </center>
+            </div>
+        </form>
+</body>
+
+</html>

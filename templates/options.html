@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .buttons button{
+            margin-top: 5%;
+            color: #000000;
+            font-size: 25px;
+            border: none;
+            width: 100px;
+            height: 30px;
+            padding: 2% 30% 2% 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 7px;
+        }
+        h1{
+            color: blue;
+            text-decoration: underline;
+        }
+        .b1{
+            background-color: #aa70e0;
+        }
+        .b2{
+            background-color: #e01346;
+        }
+        .b3{
+            background-color: #48e778;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Choose Your Option</h1>
+        <div class="buttons">
+            <a href="{{url_for('deposit',accno=accno,pinno=pinno)}}"><button class="b1">Deposit</button></a>
+            <a href="{{url_for('withdraw',accno=accno,pinno=pinno)}}"><button class="b2">Withdraw</button></a>
+            <a href="{{url_for('balance',accno=accno,pinno=pinno)}}"><button class="b3">Balance</button></a>
+        </div>
+    </center>
+</body>
+</html>
